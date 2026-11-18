@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "No dependencies needed for a static HTML website."
+
+build:
+  commands:
+    - echo "Building the project..."
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no # Store folder and files in the root of the artifact output
+  base-directory: .  # Specify the directory of files to upload (use '.' for root directory)
